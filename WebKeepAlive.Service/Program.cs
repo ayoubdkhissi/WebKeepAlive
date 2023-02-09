@@ -36,6 +36,7 @@ IHost host = Host.CreateDefaultBuilder(args)
         services.AddScoped<IRequestSender, RequestSender>();
 
     })
+    .UseWindowsService()
     .Build();
 
 // Configuring Schedulers
@@ -46,6 +47,8 @@ host.Services.UseScheduler(async scheduler =>
     
     scheduler.Schedule<KeepAliveWorker>().EverySeconds(20).PreventOverlapping("KeepAliveWorker");
 });
+
+
 
 
 await host.RunAsync();

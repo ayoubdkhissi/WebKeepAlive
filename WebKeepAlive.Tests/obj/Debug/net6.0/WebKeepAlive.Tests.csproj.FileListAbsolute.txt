@@ -143,3 +143,8 @@ C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Tes
 C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Tests\obj\Debug\net6.0\WebKeepAlive.Tests.pdb
 C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Tests\obj\Debug\net6.0\WebKeepAlive.Tests.genruntimeconfig.cache
 C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Tests\obj\Debug\net6.0\ref\WebKeepAlive.Tests.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Tests\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Tests\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Tests\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Tests\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Tests\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll

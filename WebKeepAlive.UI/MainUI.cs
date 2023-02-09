@@ -16,20 +16,41 @@ public partial class MainUI : Form
 {
 
     private readonly IEndpointRepository _endPointRepository;
+    private readonly IWorkerService _workerService;
     private BindingList<Endpoint> items;
-    
-    public MainUI(IEndpointRepository endPointRepository)
+
+    public MainUI(IEndpointRepository endPointRepository, IWorkerService workerService)
     {
         InitializeComponent();
         _endPointRepository = endPointRepository;
+        _workerService = workerService;
     }
 
     private async void MainUI_Load(object sender, EventArgs e)
     {
+        // Get all endpoints from database and bind them
         var endpoints = await _endPointRepository.GetAllEndpointsAsync();
         items = new BindingList<Endpoint>(endpoints.ToList());
-
         data_grid.DataSource = items;
+
+        // set label state and buttons
+        if (_workerService.IsRunning())
+        {
+            state_lbl.Text = "Running";
+            state_lbl.ForeColor = Color.Green;
+            
+            // disable start button
+            start_btn.Enabled = false;
+        }
+        else
+        {
+            state_lbl.Text = "Stopped";
+            state_lbl.ForeColor = Color.Red;
+
+            // disable stop button
+            stop_btn.Enabled = false;
+        }
+
     }
     
     private async void add_btn_ClickAsync(object sender, EventArgs e)
@@ -75,5 +96,39 @@ public partial class MainUI : Form
             // Remove the item from the DataGridView
             data_grid.Rows.RemoveAt(selectedIndex);
         }
+    }
+
+    private void start_btn_Click(object sender, EventArgs e)
+    {
+        // start the service
+        _workerService.Start();
+
+        // set label state
+        state_lbl.Text = "Running";
+        state_lbl.ForeColor = Color.Green;
+
+        // disable start button
+        start_btn.Enabled = false;
+
+        // enable stop button
+        stop_btn.Enabled = true;
+
+
+    }
+
+    private void stop_btn_Click(object sender, EventArgs e)
+    {
+        // stop the service 
+        _workerService.Stop();
+
+        // set label state
+        state_lbl.Text = "Stopped";
+        state_lbl.ForeColor = Color.Red;
+
+        // disable stop button
+        stop_btn.Enabled = false;
+
+        // enable start button
+        start_btn.Enabled = true;
     }
 }

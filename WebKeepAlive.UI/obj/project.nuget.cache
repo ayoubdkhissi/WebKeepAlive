@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "W6HBiaLdM0aXhPZYPtCvBW9xB8M9X2ldP3H7x+3TkthHMfG4E0xpGwSb+21YnqwEmZO2lpCVZgKb52wgAoCuqg==",
+  "dgSpecHash": "VUGvTX4Ue8qTuMJ0HCCvhtYTEyfmIbN/blskSjqEVHnu0Q/S6SmK4ZK4CQUyXtkG4tXKqFtiNTXFFfX8Mr0Eeg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Agent-47\\Documents\\Projects\\.NET Projects\\WebKeepAlive\\WebKeepAlive.UI\\WebKeepAlive.UI.csproj",
   "expectedPackageFiles": [
@@ -25,8 +25,10 @@
     "C:\\Users\\Agent-47\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\Agent-47\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\Agent-47\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.2\\sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\Agent-47\\.nuget\\packages\\system.diagnostics.eventlog\\7.0.0\\system.diagnostics.eventlog.7.0.0.nupkg.sha512",
     "C:\\Users\\Agent-47\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Agent-47\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Agent-47\\.nuget\\packages\\system.serviceprocess.servicecontroller\\7.0.0\\system.serviceprocess.servicecontroller.7.0.0.nupkg.sha512",
     "C:\\Users\\Agent-47\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Agent-47\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],

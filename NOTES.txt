@@ -1,0 +1,2 @@
+Because starting and stoping a windows service requires admin priviliges, 
+you need to open VS as admin in order to be able to start and stop the service.

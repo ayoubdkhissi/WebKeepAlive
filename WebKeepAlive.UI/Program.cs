@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using WebKeepAlive.Core.Constants;
 using WebKeepAlive.Core.Data;
 using WebKeepAlive.Core.Interfaces;
+using WebKeepAlive.Core.Services;
 
 namespace WebKeepAlive.UI;
 
@@ -45,6 +46,7 @@ internal static class Program
         });
         
         services.AddScoped<IEndpointRepository, EndpointRepository>();
+        services.AddScoped<IWorkerService, WorkerService>();
 
         return services.BuildServiceProvider();
     }

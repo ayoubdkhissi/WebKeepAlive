@@ -8,8 +8,9 @@ namespace WebKeepAlive.Core.Constants;
 public static class AppDefaults
 {
     public const string APP_NAME = "WebKeepAlive";
+    public const string SERVICE_NAME = "WebKeepAliveService";
     private const string DATABASE_NAME = "database.db";
-    
+
     public static string AppDataFolder => GetAppDataFolder();
 
     private static string _appDataFolder;
@@ -22,35 +23,32 @@ public static class AppDefaults
         if (_appDataFolder is not null)
             return _appDataFolder;
 
-        /*The Following code is for Windows OS Only*/
-        if (OperatingSystem.IsWindows())
+        // Get all drives
+        var drives = Directory.GetLogicalDrives();
+
+        // search for C drive
+        string c_drive = drives.FirstOrDefault(c => c.Contains('C'));
+
+        // if exist and you have access to it, create a folder called APP_NAME and put DB in it
+        if (c_drive is not null && IsDirectoryWritable(c_drive))
         {
-            // Get all drives
-            var drives = Directory.GetLogicalDrives();
+            _appDataFolder = Path.Combine(c_drive, APP_NAME);
+            Directory.CreateDirectory(_appDataFolder);
+            return _appDataFolder;
+        }
 
-            // search for C drive
-            string c_drive = drives.FirstOrDefault(c => c.Contains('C'));
-
-            // if exist and you have access to it, create a folder called APP_NAME and put DB in it
-            if (c_drive is not null && IsDirectoryWritable(c_drive))
+        foreach (var drive in drives)
+        {
+            if (IsDirectoryWritable(drive))
             {
-                _appDataFolder = Path.Combine(c_drive, APP_NAME);
-                Directory.CreateDirectory(_appDataFolder);
+                _appDataFolder = Path.Combine(drive, APP_NAME);
                 return _appDataFolder;
             }
-
-            foreach (var drive in drives)
-            {
-                if (IsDirectoryWritable(drive))
-                {
-                    _appDataFolder = Path.Combine(drive, APP_NAME);
-                    return _appDataFolder;
-                }
-            }
-
-            // if we get here it means that we couldn't create the APP data folder
-            Environment.Exit(0);
         }
+
+        // if we get here it means that we couldn't create the APP data folder
+        Environment.Exit(0);
+
 
         return _appDataFolder;
     }

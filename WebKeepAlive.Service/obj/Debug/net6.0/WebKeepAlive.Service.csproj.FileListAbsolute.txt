@@ -87,3 +87,6 @@ C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Ser
 C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Service\bin\Debug\net6.0\Mono.TextTemplating.dll
 C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Service\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Service\bin\Debug\net6.0\Coravel.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Service\bin\Debug\net6.0\Microsoft.Extensions.Hosting.WindowsServices.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Service\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll

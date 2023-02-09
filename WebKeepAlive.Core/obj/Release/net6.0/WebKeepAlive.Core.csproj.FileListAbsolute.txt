@@ -1,0 +1,14 @@
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\bin\Release\net6.0\WebKeepAlive.Core.deps.json
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\bin\Release\net6.0\WebKeepAlive.Core.runtimeconfig.json
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\bin\Release\net6.0\WebKeepAlive.Core.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\bin\Release\net6.0\WebKeepAlive.Core.pdb
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\WebKeepAlive.Core.csproj.AssemblyReference.cache
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\WebKeepAlive.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\WebKeepAlive.Core.AssemblyInfoInputs.cache
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\WebKeepAlive.Core.AssemblyInfo.cs
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\WebKeepAlive.Core.csproj.CoreCompileInputs.cache
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\WebKeepAlive.Core.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\refint\WebKeepAlive.Core.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\WebKeepAlive.Core.pdb
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\WebKeepAlive.Core.genruntimeconfig.cache
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.Core\obj\Release\net6.0\ref\WebKeepAlive.Core.dll
