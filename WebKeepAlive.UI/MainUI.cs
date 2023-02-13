@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Net;
@@ -130,5 +131,11 @@ public partial class MainUI : Form
 
         // enable start button
         start_btn.Enabled = true;
+    }
+
+    private void refresh_btn_Click(object sender, EventArgs e)
+    {
+        Debug.WriteLine("REFRESHINGGGGG");
+        this.MainUI_Load(sender, e);
     }
 }

@@ -19,7 +19,7 @@ IHost host = Host.CreateDefaultBuilder(args)
         {
             var connectionString = new SqliteConnectionStringBuilder
             {
-                DataSource = AppDefaults.DatabasePath
+                DataSource = AppDefaults.DATABASE_NAME
             }.ToString();
             options.UseSqlite(new SqliteConnection(connectionString));
         });
@@ -45,7 +45,7 @@ host.Services.UseScheduler(async scheduler =>
     // get the send rate then set it in every second (v2.0)
     //var repo = host.Services.CreateScope().ServiceProvider.GetRequiredService<IEndpointRepository>();
     
-    scheduler.Schedule<KeepAliveWorker>().EverySeconds(20).PreventOverlapping("KeepAliveWorker");
+    scheduler.Schedule<KeepAliveWorker>().EveryThirtyMinutes().PreventOverlapping("KeepAliveWorker");
 });
 
 

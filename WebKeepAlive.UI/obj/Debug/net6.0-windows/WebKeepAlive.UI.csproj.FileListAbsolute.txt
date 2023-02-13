@@ -66,3 +66,4 @@ C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.UI\
 C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.UI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.UI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
 C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.UI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\Agent-47\Documents\Projects\.NET Projects\WebKeepAlive\WebKeepAlive.UI\obj\Debug\net6.0-windows\WebKeepAlive.UI.Properties.Resources.resources

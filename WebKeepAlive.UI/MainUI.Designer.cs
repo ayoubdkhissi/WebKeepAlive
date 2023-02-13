@@ -124,12 +124,13 @@ partial class MainUI
             // 
             // refresh_btn
             // 
-            this.refresh_btn.Location = new System.Drawing.Point(557, 21);
+            this.refresh_btn.Location = new System.Drawing.Point(477, 356);
             this.refresh_btn.Name = "refresh_btn";
-            this.refresh_btn.Size = new System.Drawing.Size(94, 29);
+            this.refresh_btn.Size = new System.Drawing.Size(65, 29);
             this.refresh_btn.TabIndex = 8;
             this.refresh_btn.Text = "refresh";
             this.refresh_btn.UseVisualStyleBackColor = true;
+            this.refresh_btn.Click += new System.EventHandler(this.refresh_btn_Click);
             // 
             // MainUI
             // 

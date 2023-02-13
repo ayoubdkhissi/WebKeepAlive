@@ -1073,7 +1073,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.2",
-          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.2"
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.2",
+          "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
           "bin/placeholder/WebKeepAlive.Core.dll": {}
@@ -2047,7 +2048,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.2",
-          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.2"
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.2",
+          "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
           "bin/placeholder/WebKeepAlive.Core.dll": {}
