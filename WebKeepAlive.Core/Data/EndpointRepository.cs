@@ -20,8 +20,16 @@ public class EndpointRepository : IEndpointRepository
 
     public async Task<Endpoint> AddEndpointAsync(Endpoint endpoint)
     {
-        _appDbContext.Endpoints.Add(endpoint);
-        await _appDbContext.SaveChangesAsync();
+        try
+        {
+            _appDbContext.Endpoints.Add(endpoint);
+            await _appDbContext.SaveChangesAsync();
+
+        }
+        catch (Exception)
+        {
+            return null;
+        }
         return endpoint;
     }
 

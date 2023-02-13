@@ -12,31 +12,45 @@ public class KeepAliveWorker : IInvocable
 {
     private readonly IEndpointRepository _endpointRepository;
     private readonly IRequestSender _requestSender;
+    private readonly ILogger<KeepAliveWorker> _logger;
 
-    public KeepAliveWorker(IEndpointRepository endpointRepository, IRequestSender requestSender)
+    public KeepAliveWorker(IEndpointRepository endpointRepository, 
+        IRequestSender requestSender, 
+        ILogger<KeepAliveWorker> logger)
     {
         _endpointRepository = endpointRepository;
         _requestSender = requestSender;
+        _logger = logger;
     }
 
     public async Task Invoke()
     {
-        Console.WriteLine("Task Invoked");
+        _logger.LogInformation("===================================================================");
+        _logger.LogInformation("Task Invoked");
         var endpoints = await _endpointRepository.GetAllEndpointsAsync();
         
         foreach(var endpoint in endpoints)
         {
-            Console.WriteLine($"Sending Request to {endpoint.EndpointUrl} ...");
+            _logger.LogInformation($"Sending Request to {endpoint.EndpointUrl} ...");
             var result = await _requestSender.SendRequestAsync(endpoint.EndpointUrl);
             
             if(result)
+            {
                 endpoint.successCount++;
+                _logger.LogInformation($"Successfully sent request to {endpoint.EndpointUrl}");
+            }
             else
+            {
                 endpoint.failureCount++;
+                // log that the request sending has failled
+                _logger.LogInformation($"Failed to send request to {endpoint.EndpointUrl}");
+
+            }
 
             await _endpointRepository.UpdateEndpointAsync(endpoint);
         }
 
-        Console.WriteLine("Task Completed");
+        _logger.LogInformation("Task Completed");
+
     }
 }

@@ -1,0 +1,4 @@
+C:\WebKeepAlive\WebKeepAlive.UI.pdb
+C:\WebKeepAlive\e_sqlite3.dll
+C:\WebKeepAlive\WebKeepAlive.Core.pdb
+C:\WebKeepAlive\WebKeepAlive.UI.exe
