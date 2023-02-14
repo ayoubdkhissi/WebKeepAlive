@@ -1,0 +1,6 @@
+C:\WebKeepAlive\Service\appsettings.Development.json
+C:\WebKeepAlive\Service\appsettings.json
+C:\WebKeepAlive\Service\WebKeepAlive.Service.pdb
+C:\WebKeepAlive\Service\e_sqlite3.dll
+C:\WebKeepAlive\Service\WebKeepAlive.Core.pdb
+C:\WebKeepAlive\Service\WebKeepAlive.Service.exe
