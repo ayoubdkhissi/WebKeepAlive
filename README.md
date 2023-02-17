@@ -25,7 +25,7 @@ It is important to note that many free cloud services have limits on daily proce
 
 # Installation Steps
 
-1. Download the latest release of the application from [the specified location]. Store the folder in a safe place.
+1. Download the latest release of the application from <a href="https://github.com/ayoubdkhissi/WebKeepAlive/releases/download/First_Release/WebKeepAlive.rar">here</a>. Store the folder in a safe place.
 2. Open a PowerShell with administrator privileges.
 3. Use the following command to create a Windows Service:
 
@@ -35,20 +35,31 @@ sc.exe Create WebKeepAliveService binPath= "path to the downloaded WebKeepAlive.
 
 Example:
  
-******image
+![image](https://user-images.githubusercontent.com/73041562/218685570-52b70606-4745-43e5-be8d-b66fc4be58cd.png)
 
 4.  Run the WebKeepAlive.UI (as admin) and you can start, stop, add and delete websites from there.
 
+![image](https://user-images.githubusercontent.com/73041562/218685728-15291d58-16a5-434b-af92-73e343b124e3.png)
+![image](https://user-images.githubusercontent.com/73041562/218685886-47ffa9a4-2f89-4994-b33a-d3bb09bdaf20.png)
+
+
 
 To verify that the service is installed, you can check for WebKeepAliveService in the list of services in the Windows Control Panel. From there, you can also start, stop the service, and set it to start automatically on system startup.
+
+![image](https://user-images.githubusercontent.com/73041562/218686103-c0909d80-dbfc-4c60-b8ef-e32a02cc13fa.png)
+
+
 
 
 **Notes**:
 
 When running the service, a folder named WebKeepAlive will be created at `C:/WebKeepAlive`, containing an SQLite database as well as a folder for logs. If you want to monitor the progress of sending requests or any potential issues, you can review the logs within this folder.
 
+![image](https://user-images.githubusercontent.com/73041562/218686263-1ecdac9d-1e92-4eef-a620-c2d2eeac60e6.png)
 
-The published application is not self-contained, and therefore requires the .NET runtime to be installed for both the service and the user interface to function properly
+
+
+Note that the published application is not self-contained, and therefore requires the **.NET runtime** to be installed for both the service and the user interface to function properly
 
 
 # Development 
