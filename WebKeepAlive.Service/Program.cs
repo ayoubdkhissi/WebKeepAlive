@@ -9,9 +9,13 @@ using WebKeepAlive.Core.Services;
 using WebKeepAlive.Service;
 using WebKeepAlive.Service.Workers;
 
-// Configuring logger
+// Configuring SeriLog logger
+var configuration = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json")
+            .Build();
+
 Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
+    .ReadFrom.Configuration(configuration)
     .WriteTo.File(AppDefaults.LogDataFolder, rollingInterval: RollingInterval.Day)
     .WriteTo.Console()
     .CreateLogger();
@@ -55,7 +59,7 @@ host.Services.UseScheduler(async scheduler =>
     // get the send rate then set it in every second (v2.0)
     //var repo = host.Services.CreateScope().ServiceProvider.GetRequiredService<IEndpointRepository>();
     
-    scheduler.Schedule<KeepAliveWorker>().EveryFiveSeconds().PreventOverlapping("KeepAliveWorker");
+    scheduler.Schedule<KeepAliveWorker>().EveryThirtyMinutes().RunOnceAtStart().PreventOverlapping("KeepAliveWorker");
 });
 
 

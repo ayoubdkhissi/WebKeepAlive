@@ -130,7 +130,7 @@ partial class MainUI
             this.refresh_btn.TabIndex = 8;
             this.refresh_btn.Text = "refresh";
             this.refresh_btn.UseVisualStyleBackColor = true;
-            this.refresh_btn.Click += new System.EventHandler(this.refresh_btn_Click);
+            this.refresh_btn.Click += new System.EventHandler(this.refresh_btn_ClickAsync);
             // 
             // MainUI
             // 

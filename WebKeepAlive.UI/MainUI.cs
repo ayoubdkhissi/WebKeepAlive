@@ -151,9 +151,8 @@ public partial class MainUI : Form
         start_btn.Enabled = true;
     }
 
-    private void refresh_btn_Click(object sender, EventArgs e)
+    private async void refresh_btn_ClickAsync(object sender, EventArgs e)
     {
-        Debug.WriteLine("REFRESHINGGGGG");
-        this.MainUI_Load(sender, e);
+        Application.Restart();
     }
 }

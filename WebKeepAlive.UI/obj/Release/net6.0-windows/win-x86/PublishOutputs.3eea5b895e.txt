@@ -1,4 +1,2 @@
 C:\Users\Agent-47\Desktop\WebKeepAlive\WebKeepAlive.UI.pdb
-C:\Users\Agent-47\Desktop\WebKeepAlive\e_sqlite3.dll
-C:\Users\Agent-47\Desktop\WebKeepAlive\WebKeepAlive.Core.pdb
 C:\Users\Agent-47\Desktop\WebKeepAlive\WebKeepAlive.UI.exe
