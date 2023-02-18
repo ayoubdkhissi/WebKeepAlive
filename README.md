@@ -68,7 +68,7 @@ If you plan to run the project in Visual Studio and continue development, keep i
 
 Use this: 
 
-```
+``` csharp
 ...
 
 var start_info = new ProcessStartInfo
@@ -83,11 +83,11 @@ var starting_result = Process.Start(start_info);
 ```
 
 instead of this: 
-```
+``` csharp
 ...
-        ServiceController service = new ServiceController(AppDefaults.SERVICE_NAME);
-        
-        service.Stop();
+    ServiceController service = new ServiceController(AppDefaults.SERVICE_NAME);
+
+    service.Stop();
 ...
         
 ```
